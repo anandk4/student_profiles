@@ -1,0 +1,17 @@
+Put student photo files in this folder.
+
+Name each photo to match the student's page "slug" in students-data.js,
+for example:
+
+  student-01.jpg   ->  matches slug "student-01"
+  priya-singh.jpg  ->  matches slug "priya-singh"
+
+Then set that student's "photo" field in ../students-data.js to:
+
+  students/photos/<filename>
+
+Square photos, at least 300x300px, look best. JPG or PNG both work.
+If a student has no photo, leave their "photo" field as "" and the site
+will automatically show a colored initials circle instead.
+
+You can delete this file once photos have been added.

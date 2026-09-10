@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students | Department of Artificial Intelligence</title>
+<meta name="description" content="Student directory and achievements — Department of Artificial Intelligence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Department logo">
+        <path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+        <path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+        <path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+        <path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+        <circle cx="50" cy="50" r="27" fill="#14141a"/>
+        <text x="50" y="57" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#ffffff">AI</text>
+      </svg>
+      <span class="brand-text">
+        <span class="dept-name">Dept. of Artificial Intelligence</span>
+        <span class="school-name">School of Skill Sciences</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero-page">
+  <div class="container hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Students</div>
+    <h1>Students</h1>
+    <p class="lead">Meet our top-performing students and browse the full department directory.</p>
+  </div>
+</section>
+
+<!-- Top 9 achievers (from wireframe) -->
+<section>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Top Performers</span>
+      <h2>Top 9 Students</h2>
+      <p>Placeholder entries — replace with actual top-ranking students each academic year.</p>
+    </div>
+    <div class="grid grid-3 reveal" id="top-students-grid"><!-- cards rendered from students/students-data.js --></div>
+  </div>
+</section>
+
+<!-- How students add their own page -->
+<section class="section-tight">
+  <div class="container">
+    <div class="card reveal" style="padding:28px;">
+      <h3 style="font-size:1.1rem;margin-bottom:10px;">📁 How students add their own profile page</h3>
+      <ol style="margin-left:18px;color:var(--color-muted);font-size:0.92rem;line-height:1.9;">
+        <li>Copy <code>students/pages/template.html</code> and rename it to your own id, e.g. <code>priya-singh.html</code>.</li>
+        <li>Fill in your details in that file (bio, skills, projects, achievements, contact).</li>
+        <li>Add your photo to <code>students/photos/</code> (optional — skip this to show an initials circle instead).</li>
+        <li>Add one entry for yourself in <code>students/students-data.js</code> and set <code>hasPage: true</code>.</li>
+      </ol>
+      <p style="font-size:0.85rem;color:var(--color-muted);margin-top:10px;">Your card then appears automatically below and links straight to your page. Full step-by-step instructions are also written at the top of <code>students-data.js</code>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Full directory with search + filter -->
+<section class="bg-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Student Directory</span>
+      <h2>Browse all students</h2>
+      <p>Search or filter by batch. Placeholder data — replace with your actual student records.</p>
+    </div>
+
+    <div class="search-row reveal">
+      <input type="text" id="student-search" class="search-input" placeholder="Search student by name...">
+    </div>
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-batch-filter="all">All Batches</button>
+      <button class="filter-btn" data-batch-filter="2022">2022 – 2026</button>
+      <button class="filter-btn" data-batch-filter="2023">2023 – 2027</button>
+      <button class="filter-btn" data-batch-filter="2024">2024 – 2028</button>
+    </div>
+
+    <div class="grid grid-4 reveal" id="student-grid"><!-- cards rendered from students/students-data.js --></div>
+
+    <p class="empty-state" id="student-empty">No students match your search. Try a different name or filter.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Achievements</span>
+      <h2>Student accomplishments</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card value-card">
+        <div class="icon-badge">🏆</div>
+        <h3 style="font-size:1rem;">Hackathon Winner Placeholder</h3>
+        <p class="muted" style="font-size:0.9rem;">Description of achievement, competition name and year go here.</p>
+      </div>
+      <div class="card value-card">
+        <div class="icon-badge">📄</div>
+        <h3 style="font-size:1rem;">Published Research Placeholder</h3>
+        <p class="muted" style="font-size:0.9rem;">Description of a student research paper or publication goes here.</p>
+      </div>
+      <div class="card value-card">
+        <div class="icon-badge">💼</div>
+        <h3 style="font-size:1rem;">Internship / Placement Placeholder</h3>
+        <p class="muted" style="font-size:0.9rem;">Description of a notable internship or placement outcome goes here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+            <path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+            <path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+            <path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+            <circle cx="50" cy="50" r="27" fill="#14141a"/>
+            <text x="50" y="57" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#ffffff">AI</text>
+          </svg>
+          <span>
+            <span class="dept-name" style="display:block;">Dept. of Artificial Intelligence</span>
+            <span class="school-name">School of Skill Sciences</span>
+          </span>
+        </div>
+        <p class="footer-desc">Preparing students for careers in AI, machine learning and data engineering through applied, skills-first education.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">F</a>
+          <a href="#" aria-label="Instagram">I</a>
+          <a href="#" aria-label="LinkedIn">L</a>
+          <a href="#" aria-label="YouTube">Y</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Department</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Students</h4>
+        <ul>
+          <li><a href="students.html">Student Directory</a></li>
+          <li><a href="students.html">Achievements</a></li>
+          <li><a href="projects.html">Project Activities</a></li>
+          <li><a href="contact.html">Admissions Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Department of Artificial Intelligence,<br>School of Skill Sciences,<br>[University Name], [City], [PIN]</li>
+          <li>ai.department@example.edu</li>
+          <li>+91-XXXXXXXXXX</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2026</span> Department of Artificial Intelligence — School of Skill Sciences. All rights reserved.</span>
+      <span>Design inspired by Galgotias University's visual style.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="students/students-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
