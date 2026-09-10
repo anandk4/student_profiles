@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (opts.showRank && s.rank) {
       var badge = document.createElement('span');
       badge.className = 'rank-badge';
-      badge.textContent = 'Rank ' + s.rank;
+      badge.textContent = 'Featured';
       card.appendChild(badge);
     }
 
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var meta = document.createElement('p');
     meta.className = 'student-meta';
-    meta.textContent = s.batchLabel + (opts.showRank && s.cgpa ? ' · CGPA ' + s.cgpa : '');
+    meta.textContent = s.batchLabel || '';
     card.appendChild(meta);
 
     if (!s.hasPage) {

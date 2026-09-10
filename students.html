@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Students | Department of Artificial Intelligence</title>
-<meta name="description" content="Student directory and achievements — Department of Artificial Intelligence.">
+<meta name="description" content="Student directory — Department of Artificial Intelligence.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -24,17 +24,15 @@
       </svg>
       <span class="brand-text">
         <span class="dept-name">Dept. of Artificial Intelligence</span>
-        <span class="school-name">School of Skill Sciences</span>
+        <span class="school-name">Department of Skill Sciences and Entrepreneurship</span>
       </span>
     </a>
     <nav class="main-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="academics.html">Academics</a></li>
         <li><a href="faculty.html">Faculty</a></li>
         <li><a href="students.html">Students</a></li>
-        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -48,17 +46,17 @@
   <div class="container hero-inner">
     <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Students</div>
     <h1>Students</h1>
-    <p class="lead">Meet our top-performing students and browse the full department directory.</p>
+    <p class="lead">Meet our students and browse the full department directory.</p>
   </div>
 </section>
 
-<!-- Top 9 achievers (from wireframe) -->
+<!-- Featured students -->
 <section>
   <div class="container">
     <div class="section-header reveal">
-      <span class="eyebrow">Top Performers</span>
-      <h2>Top 9 Students</h2>
-      <p>Placeholder entries — replace with actual top-ranking students each academic year.</p>
+      <span class="eyebrow">Featured</span>
+      <h2>Featured Students</h2>
+      <p>Placeholder entries — replace with the students you'd like to feature.</p>
     </div>
     <div class="grid grid-3 reveal" id="top-students-grid"><!-- cards rendered from students/students-data.js --></div>
   </div>
@@ -71,7 +69,7 @@
       <h3 style="font-size:1.1rem;margin-bottom:10px;">📁 How students add their own profile page</h3>
       <ol style="margin-left:18px;color:var(--color-muted);font-size:0.92rem;line-height:1.9;">
         <li>Copy <code>students/pages/template.html</code> and rename it to your own id, e.g. <code>priya-singh.html</code>.</li>
-        <li>Fill in your details in that file (bio, skills, projects, achievements, contact).</li>
+        <li>Fill in your details in that file (bio, programming skills, reasoning skills, hobbies, area you'd like to explore, contact).</li>
         <li>Add your photo to <code>students/photos/</code> (optional — skip this to show an initials circle instead).</li>
         <li>Add one entry for yourself in <code>students/students-data.js</code> and set <code>hasPage: true</code>.</li>
       </ol>
@@ -86,18 +84,17 @@
     <div class="section-header reveal">
       <span class="eyebrow">Student Directory</span>
       <h2>Browse all students</h2>
-      <p>Search or filter by batch. Placeholder data — replace with your actual student records.</p>
+      <p>Search by name. Placeholder data — replace with your actual student records.</p>
     </div>
 
     <div class="search-row reveal">
       <input type="text" id="student-search" class="search-input" placeholder="Search student by name...">
     </div>
     <div class="filter-bar reveal">
-      <button class="filter-btn active" data-batch-filter="all">All Batches</button>
-      <button class="filter-btn" data-batch-filter="2022">2022 – 2026</button>
-      <button class="filter-btn" data-batch-filter="2023">2023 – 2027</button>
-      <button class="filter-btn" data-batch-filter="2024">2024 – 2028</button>
+      <button class="filter-btn active" data-batch-filter="all">All Students</button>
+      <button class="filter-btn" data-batch-filter="2025">Batch 2025 – 2029</button>
     </div>
+    <p class="muted" style="font-size:0.82rem;margin:-16px 0 24px;">Only one batch so far — add a new filter button here (and matching "batch" codes in students-data.js) once a second batch joins.</p>
 
     <div class="grid grid-4 reveal" id="student-grid"><!-- cards rendered from students/students-data.js --></div>
 
@@ -108,24 +105,30 @@
 <section>
   <div class="container">
     <div class="section-header reveal">
-      <span class="eyebrow">Achievements</span>
-      <h2>Student accomplishments</h2>
+      <span class="eyebrow">What Our Students Bring</span>
+      <h2>Getting to know our first-year cohort</h2>
+      <p>Every student's page highlights these four things — visit their profiles to find out more.</p>
     </div>
-    <div class="grid grid-3 reveal">
+    <div class="grid grid-4 reveal">
       <div class="card value-card">
-        <div class="icon-badge">🏆</div>
-        <h3 style="font-size:1rem;">Hackathon Winner Placeholder</h3>
-        <p class="muted" style="font-size:0.9rem;">Description of achievement, competition name and year go here.</p>
+        <div class="icon-badge">💻</div>
+        <h3 style="font-size:1rem;">Programming Skills</h3>
+        <p class="muted" style="font-size:0.9rem;">Languages and tools each student is already comfortable with, from Python to Scratch.</p>
       </div>
       <div class="card value-card">
-        <div class="icon-badge">📄</div>
-        <h3 style="font-size:1rem;">Published Research Placeholder</h3>
-        <p class="muted" style="font-size:0.9rem;">Description of a student research paper or publication goes here.</p>
+        <div class="icon-badge">🧩</div>
+        <h3 style="font-size:1rem;">Reasoning Skills</h3>
+        <p class="muted" style="font-size:0.9rem;">How each student approaches logical thinking, puzzles and problem-solving.</p>
       </div>
       <div class="card value-card">
-        <div class="icon-badge">💼</div>
-        <h3 style="font-size:1rem;">Internship / Placement Placeholder</h3>
-        <p class="muted" style="font-size:0.9rem;">Description of a notable internship or placement outcome goes here.</p>
+        <div class="icon-badge">🎨</div>
+        <h3 style="font-size:1rem;">Hobbies</h3>
+        <p class="muted" style="font-size:0.9rem;">What our students enjoy outside the classroom — sports, art, music and more.</p>
+      </div>
+      <div class="card value-card">
+        <div class="icon-badge">🔭</div>
+        <h3 style="font-size:1rem;">Area to Explore</h3>
+        <p class="muted" style="font-size:0.9rem;">The part of AI each student is most curious to dive into over the coming years.</p>
       </div>
     </div>
   </div>
@@ -146,7 +149,7 @@
           </svg>
           <span>
             <span class="dept-name" style="display:block;">Dept. of Artificial Intelligence</span>
-            <span class="school-name">School of Skill Sciences</span>
+            <span class="school-name">Department of Skill Sciences and Entrepreneurship</span>
           </span>
         </div>
         <p class="footer-desc">Preparing students for careers in AI, machine learning and data engineering through applied, skills-first education.</p>
@@ -161,31 +164,28 @@
         <h4>Explore</h4>
         <ul>
           <li><a href="about.html">About Department</a></li>
-          <li><a href="academics.html">Academics</a></li>
           <li><a href="faculty.html">Faculty</a></li>
-          <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
       <div>
         <h4>Students</h4>
         <ul>
           <li><a href="students.html">Student Directory</a></li>
-          <li><a href="students.html">Achievements</a></li>
-          <li><a href="projects.html">Project Activities</a></li>
+          <li><a href="students.html">Featured Students</a></li>
           <li><a href="contact.html">Admissions Enquiry</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>Department of Artificial Intelligence,<br>School of Skill Sciences,<br>[University Name], [City], [PIN]</li>
+          <li>Department of Artificial Intelligence,<br>Department of Skill Sciences and Entrepreneurship,<br>[University Name], [City], [PIN]</li>
           <li>ai.department@example.edu</li>
           <li>+91-XXXXXXXXXX</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="current-year">2026</span> Department of Artificial Intelligence — School of Skill Sciences. All rights reserved.</span>
+      <span>© <span id="current-year">2026</span> Department of Artificial Intelligence — Department of Skill Sciences and Entrepreneurship. All rights reserved.</span>
       <span>Design inspired by Galgotias University's visual style.</span>
     </div>
   </div>

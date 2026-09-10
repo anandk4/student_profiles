@@ -1,8 +1,8 @@
 /* ==========================================================================
    Department of Artificial Intelligence — Student Directory data
    ==========================================================================
-   This is the single list that drives BOTH the "Top Students" section and
-   the full "Student Directory" on students.html and index.html.
+   This is the single list that drives BOTH the "Featured Students" section
+   and the full "Student Directory" on students.html and index.html.
 
    HOW A STUDENT ADDS THEIR OWN PAGE
    ----------------------------------
@@ -10,15 +10,16 @@
    2. Rename your copy to a short id with no spaces, e.g. "priya-singh.html"
       (use lowercase letters, numbers and hyphens only).
    3. Open your new file and replace the placeholder text with your own
-      information (batch, bio, skills, projects, contact).
+      information (batch, bio, programming skills, reasoning skills,
+      hobbies, area you'd like to explore, contact).
    4. Add your photo (see PHOTOS below), then come back to THIS file and
       add one new object to the STUDENTS_DATA array (copy an existing entry
       as a starting point), then set:
          slug:     "priya-singh"      <- must match your filename exactly
          hasPage:  true                <- makes your card clickable
    5. Save. Your card will now appear automatically on the Students page
-      (and in Top Students, if you set a "rank") and will link straight to
-      the page you created in step 3.
+      (and in Featured Students, if you set a "rank") and will link
+      straight to the page you created in step 3.
 
    PHOTOS
    ----------------------------------
@@ -40,24 +41,24 @@
    initials    - 1-3 letters shown when there is no photo
    photo       - path to photo from the site root, e.g.
                  "students/photos/priya-singh.jpg", or "" for no photo
-   batch       - one of "2022", "2023", "2024" (used by the batch filter)
-   batchLabel  - text shown under the name, e.g. "Batch 2022 – 2026"
-   rank        - number 1-9 to feature in "Top Students", or null to leave out
-   cgpa        - optional string shown next to rank (e.g. "9.8"), or null
+   batch       - a short code for the batch filter, e.g. "2025"
+                 (add a new code once a second batch joins the programme)
+   batchLabel  - text shown under the name, e.g. "Batch 2025 – 2029"
+   rank        - number 1-9 to feature in "Featured Students", or null
    hasPage     - true once the student has created their own page (step 3-4)
    ========================================================================== */
 
 var STUDENTS_DATA = [
-  { slug: "student-01", name: "Sample Student One", initials: "S1", photo: "students/photos/student-01.jpg", batch: "2022", batchLabel: "Batch 2022 – 2026", rank: 1, cgpa: "9.8", hasPage: true },
-  { slug: "student-02", name: "Sample Student Two", initials: "S2", photo: "", batch: "2022", batchLabel: "Batch 2022 – 2026", rank: 2, cgpa: "9.7", hasPage: true },
-  { slug: "student-03", name: "Student Name", initials: "S3", photo: "", batch: "2022", batchLabel: "Batch 2022 – 2026", rank: 3, cgpa: "9.6", hasPage: false },
-  { slug: "student-04", name: "Student Name", initials: "S4", photo: "", batch: "2023", batchLabel: "Batch 2023 – 2027", rank: 4, cgpa: "9.6", hasPage: false },
-  { slug: "student-05", name: "Student Name", initials: "S5", photo: "", batch: "2023", batchLabel: "Batch 2023 – 2027", rank: 5, cgpa: "9.5", hasPage: false },
-  { slug: "student-06", name: "Student Name", initials: "S6", photo: "", batch: "2023", batchLabel: "Batch 2023 – 2027", rank: 6, cgpa: "9.5", hasPage: false },
-  { slug: "student-07", name: "Student Name", initials: "S7", photo: "", batch: "2024", batchLabel: "Batch 2024 – 2028", rank: 7, cgpa: "9.4", hasPage: false },
-  { slug: "student-08", name: "Student Name", initials: "S8", photo: "", batch: "2024", batchLabel: "Batch 2024 – 2028", rank: 8, cgpa: "9.4", hasPage: false },
-  { slug: "student-09", name: "Student Name", initials: "S9", photo: "", batch: "2024", batchLabel: "Batch 2024 – 2028", rank: 9, cgpa: "9.3", hasPage: false },
-  { slug: "student-10", name: "Student Name", initials: "S10", photo: "", batch: "2022", batchLabel: "Batch 2022 – 2026", rank: null, cgpa: null, hasPage: false },
-  { slug: "student-11", name: "Student Name", initials: "S11", photo: "", batch: "2023", batchLabel: "Batch 2023 – 2027", rank: null, cgpa: null, hasPage: false },
-  { slug: "student-12", name: "Student Name", initials: "S12", photo: "", batch: "2024", batchLabel: "Batch 2024 – 2028", rank: null, cgpa: null, hasPage: false }
+  { slug: "student-01", name: "Sample Student One", initials: "S1", photo: "students/photos/student-01.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 1, hasPage: true },
+  { slug: "student-02", name: "Sample Student Two", initials: "S2", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 2, hasPage: true },
+  { slug: "student-03", name: "Student Name", initials: "S3", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 3, hasPage: false },
+  { slug: "student-04", name: "Student Name", initials: "S4", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-05", name: "Student Name", initials: "S5", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-06", name: "Student Name", initials: "S6", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-07", name: "Student Name", initials: "S7", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-08", name: "Student Name", initials: "S8", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-09", name: "Student Name", initials: "S9", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-10", name: "Student Name", initials: "S10", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-11", name: "Student Name", initials: "S11", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "student-12", name: "Student Name", initials: "S12", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false }
 ];
