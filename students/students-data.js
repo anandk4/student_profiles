@@ -49,8 +49,8 @@
    ========================================================================== */
 
 var STUDENTS_DATA = [
-  { slug: "student-01", name: "Sample Student One", initials: "S1", photo: "students/photos/student-01.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 1, hasPage: true },
-  { slug: "student-02", name: "Sample Student Two", initials: "S2", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 2, hasPage: true },
+  { slug: "Vansh-Saini", name: "Vansh Saini", initials: "S1", photo: "students/photos/vansh-saini.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 1, hasPage: true },
+  { slug: "yash raj", name: "Yash Raj", initials: "S2", photo: "students/photos/student-01.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 2, hasPage: true },
   { slug: "yash-raj", name: "Yash Raj", initials: "S3", photo: "students/photos/student-01.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 3, hasPage: true },
   { slug: "student-04", name: "Student Name", initials: "S4", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
   { slug: "student-05", name: "Student Name", initials: "S5", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
