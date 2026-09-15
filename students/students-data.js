@@ -54,7 +54,7 @@ var STUDENTS_DATA = [
   { slug: "Ashutosh-Singh", name: "Ashutosh Singh", initials: "S3", photo: "students/photos/Ashutosh-Singh.JPEG.jpeg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 3, hasPage: true },
   { slug: "Abhinandan-kumar", name: "Abhinandan Kumar", initials: "S4", photo: "students/photos/Abhinandan-Kumar.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 2, hasPage: true },
   { slug: "Syed-Amaan", name: "Syed Amaan", initials: "S5", photo: "students/photos/syed-amaan-raza.jpeg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 4, hasPage: true },
-  { slug: "student-06", name: "Student Name", initials: "S6", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
+  { slug: "Shubh-Pathak", name: "Shubh Pathak", initials: "S6", photo: "students/photos/Shubh-Pathak.jpg", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: 5, hasPage: true },
   { slug: "student-07", name: "Student Name", initials: "S7", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
   { slug: "student-08", name: "Student Name", initials: "S8", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
   { slug: "student-09", name: "Student Name", initials: "S9", photo: "", batch: "2025", batchLabel: "Batch 2025 – 2029, First Year", rank: null, hasPage: false },
