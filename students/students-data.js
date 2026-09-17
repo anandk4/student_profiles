@@ -25,7 +25,7 @@
    ----------------------------------
    Put your photo file in the "students/photos/" folder, named to match
    your slug — e.g. "students/photos/priya-singh.jpg". Then set the
-   "photo" field below to that path, e.g. "students/photos/priya-singh.jpg".
+   "photo" field below to that path, e.g. "students/photos/priya-singh.jpg". 
    Square photos (at least 300x300px) look best. If you leave "photo" as
    an empty string "", the site automatically shows a colored circle with
    your initials instead — no photo required.
