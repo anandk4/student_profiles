@@ -9,7 +9,7 @@
    1. Go to the "students/pages/" folder and copy "template.html".
    2. Rename your copy to a short id with no spaces, e.g. "priya-singh.html"
       (use lowercase letters, numbers and hyphens only).
-   3. Open your new file and replace the placeholder text with your own
+   3. Open your new file and replace the placeholder text with your own 
       information (batch, bio, programming skills, reasoning skills,
       hobbies, area you'd like to explore, contact).
    4. Add your photo (see PHOTOS below), then come back to THIS file and
