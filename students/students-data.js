@@ -13,7 +13,7 @@
       information (batch, bio, programming skills, reasoning skills, 
       hobbies, area you'd like to explore, contact).
    4. Add your photo (see PHOTOS below), then come back to THIS file and
-      add one new object to the STUDENTS_DATA array (copy an existing entry
+      add one new object to the STUDENTS_DATA array (copy an existing entry   
       as a starting point), then set:
          slug:     "priya-singh"      <- must match your filename exactly
          hasPage:  true                <- makes your card clickable
