@@ -83,10 +83,12 @@ var STUDENTS_DATA = [
   { slug: "Akshit-Singh", name: "Akshit Singh", initials: "S32", photo: "students/photos/akshit-singh.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 32, hasPage: true},
   { slug: "Aryan-Tomar", name: "Aryan Tomar", initials: "S33", photo: "students/photos/aryan-tomar.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 33, hasPage: true},
   { slug: "Shaksham-Sharma", name: "Shaksham Sharma", initials: "S34", photo: "students/photos/shaksham-sharma.png", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 34, hasPage: true},
-  { slug: "tejas", name: "Tejas ", initials: "S34", photo: "students/photos/Tejas-naruka.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 35, hasPage: true},
-  { slug: "Anand-kumar", name: "Anand Kumar ", initials: "S34", photo: "students/photos/Anand-kumar.png", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 36, hasPage: true},
-  { slug: "vibhor-jaiswal", name: "Vibhor Jaiswal ", initials: "S34", photo: "students/photos/vibhor-jaiswal.png", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 37, hasPage: true},
-  { slug: "HARSH-SOLANKI", name: "Harsh Solanki ", initials: "S35", photo: "students/photos/Harsh-solanki.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 38, hasPage: true},
-  { slug: "Bhavya-A Agarwal", name: "Bhavya A Agarwal", initials: "S36", photo: "students/photos/", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 39, hasPage: true},
-  { slug: "Gatha-Jain", name: "GATHA JAIN", initials: "S37", photo: "students/photos/gatha-jain.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 40, hasPage: true}
+  { slug: "tejas", name: "Tejas ", initials: "S35", photo: "students/photos/Tejas-naruka.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 35, hasPage: true},
+  { slug: "Anand-kumar", name: "Anand Kumar ", initials: "S36", photo: "students/photos/Anand-kumar.png", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 36, hasPage: true},
+  { slug: "vibhor-jaiswal", name: "Vibhor Jaiswal ", initials: "S37", photo: "students/photos/vibhor-jaiswal.png", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 37, hasPage: true},
+  { slug: "HARSH-SOLANKI", name: "Harsh Solanki ", initials: "S38", photo: "students/photos/Harsh-solanki.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 38, hasPage: true},
+  { slug: "Bhavya-A Agarwal", name: "Bhavya A Agarwal", initials: "S39", photo: "students/photos/", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 39, hasPage: true},
+  { slug: "Gatha-Jain", name: "GATHA JAIN", initials: "S40", photo: "students/photos/gatha-jain.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 40, hasPage: true},
+  { slug: "Mani", name: "Mani Kour", initials: "41", photo: "students/photos/mani.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 41, hasPage: true},
+  { slug: "Kashish", name: "Kashish", initials: "42", photo: "students/photos/kashish.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 42, hasPage: true}
    ];
