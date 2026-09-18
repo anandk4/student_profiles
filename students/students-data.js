@@ -60,7 +60,7 @@ var STUDENTS_DATA = [
   { slug: "Soniya-Sharma", name: "Soniya Sharma", initials: "S10", photo: "students/photos/Soniya-Sharma.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 10, hasPage: true },
   { slug: "Priyanshu-kundan", name: "Priyanshu Kundan", initials: "S11", photo: "students/photos/Priyanshu-Kundan.jpg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 11, hasPage: true },
   { slug: "Nikhil-Rathour", name: "Nikhil Rathour", initials: "S12", photo: "students/photos/Nikhil-Rathour.jpg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 12, hasPage: true },
-  { slug: "Prashant", name: "Prashant", initials: "S13", photo: "students/photos/Prashant.jpg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 13, hasPage: true },
+  { slug: "Prashant", name: "Prashant", initials: "S13", photo: "students/photos/prashant_.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 13, hasPage: true },
   { slug: "rishu-raj", name: "Rishu Raj", initials: "S14", photo: "students/photos/rishu-raj.jpg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 14, hasPage: true},
   { slug: "Hardik-Tiwari", name: "Hardik Tiwari", initials: "S15", photo: "students/photos/Hardik-Tiwari.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 15, hasPage: true},
   { slug: "Abhinandan-kumar", name: "Abhinandan Kumar", initials: "S16", photo: "students/photos/Abhinandan-kumar.jpg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 16, hasPage: true},
