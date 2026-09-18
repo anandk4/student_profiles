@@ -90,5 +90,11 @@ var STUDENTS_DATA = [
   { slug: "Bhavya-A Agarwal", name: "Bhavya A Agarwal", initials: "S39", photo: "students/photos/", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 39, hasPage: true},
   { slug: "Gatha-Jain", name: "GATHA JAIN", initials: "S40", photo: "students/photos/gatha-jain.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 40, hasPage: true},
   { slug: "Mani", name: "Mani Kour", initials: "41", photo: "students/photos/mani_kour.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 41, hasPage: true},
-  { slug: "Kashish", name: "Kashish", initials: "42", photo: "students/photos/kashish_.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 42, hasPage: true}
+  { slug: "Kashish", name: "Kashish", initials: "42", photo: "students/photos/kashish_.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 42, hasPage: true},
+  { slug: "Vansh_Baisoya", name: "Vansh Baisoya", initials: "43", photo: "students/photos/vansh_baisoya.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 43, hasPage: true},
+  { slug: "Aman", name: "Aman", initials: "44", photo: "students/photos/aman.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 44, hasPage: true},
+  { slug: "Prince-Tanwar", name: "Prince Tanwar", initials: "45", photo: "students/photos/prince-tanwar.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 45, hasPage: true},
+  { slug: "Ajay-Modanval", name: "Ajay Modanval", initials: "46", photo: "students/photos/ajay-modanval.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 46, hasPage: true},
+  { slug: "Abhi-Gahoi", name: "Abhi Gahoi", initials: "47", photo: "students/photos/abhi-gahoi.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 47, hasPage: true},
+  { slug: "Somesh-Shukla", name: "Somesh Shukla", initials: "48", photo: "students/photossomesh-shukla.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 48, hasPage: true}
    ];
