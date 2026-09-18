@@ -98,5 +98,5 @@ var STUDENTS_DATA = [
   { slug: "Abhi-Gahoi", name: "Abhi Gahoi", initials: "47", photo: "students/photos/abhi-gahoi.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 47, hasPage: true},
   { slug: "Somesh-Shukla", name: "Somesh Shukla", initials: "48", photo: "students/photos/somesh-shukla.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 48, hasPage: true},
   { slug: "Harshit-Chaurasia", name: "Harshit Chaurasia", initials: "49", photo: "students/photos/harshit-chaurasia.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 49, hasPage: true},
-  { slug: "Shivang-Kumar", name: "Shivang Kumar", initials: "50", photo: "students/photos/shivang-kumar.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 50, hasPage: true}
+  { slug: "Shivang-Kumar", name: "Shivang Kumar", initials: "50", photo: "students/photos/shivang-kumar.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 50, hasPage: true},
    ];
