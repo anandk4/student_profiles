@@ -89,6 +89,6 @@ var STUDENTS_DATA = [
   { slug: "HARSH-SOLANKI", name: "Harsh Solanki ", initials: "S38", photo: "students/photos/Harsh-solanki.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 38, hasPage: true},
   { slug: "Bhavya-A Agarwal", name: "Bhavya A Agarwal", initials: "S39", photo: "students/photos/", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 39, hasPage: true},
   { slug: "Gatha-Jain", name: "GATHA JAIN", initials: "S40", photo: "students/photos/gatha-jain.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 40, hasPage: true},
-  { slug: "Mani", name: "Mani Kour", initials: "41", photo: "students/photos/mani.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 41, hasPage: true},
-  { slug: "Kashish", name: "Kashish", initials: "42", photo: "students/photos/kashish.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 42, hasPage: true}
+  { slug: "Mani", name: "Mani Kour", initials: "41", photo: "students/photos/mani_kour.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 41, hasPage: true},
+  { slug: "Kashish", name: "Kashish", initials: "42", photo: "students/photos/kashish_.jpeg", batch: "2026", batchLabel: "Batch 2026 – 2030, First Year", rank: 42, hasPage: true}
    ];
