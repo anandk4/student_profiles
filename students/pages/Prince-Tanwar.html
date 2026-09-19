@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Tanwar | Cyber Security</title>
+  <style>
+    :root {
+      --color-muted: #6b7280;
+      --color-dark: #14141a;
+      --color-primary: #3a0ca3;
+      --color-bg: #f7f7fb;
+      --color-card: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Poppins, Arial, sans-serif;
+      background: var(--color-bg);
+      color: #222;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 14px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-mark { width: 52px; height: 52px; }
+    .dept-name { display: block; font-weight: 700; }
+    .school-name { display: block; color: var(--color-muted); font-size: .85rem; }
+    .main-nav ul { display: flex; list-style: none; gap: 22px; margin: 0; padding: 0; }
+    .main-nav a:hover { color: var(--color-primary); }
+    .nav-toggle { display: none; background: none; border: 0; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: #222; margin: 5px; }
+
+    main { max-width: 1050px; margin: auto; padding: 42px 20px 60px; }
+    .breadcrumb { color: var(--color-muted); font-size: .9rem; margin-bottom: 15px; }
+    .breadcrumb a { color: var(--color-primary); }
+    h1 { margin-bottom: 4px; font-size: 2.4rem; }
+    .lead { color: var(--color-muted); margin-top: 0; }
+
+    .card {
+      background: var(--color-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.04);
+    }
+    .detail-block { margin-top: 28px; }
+    .faculty-spotlight {
+      display: grid;
+      gap: 28px;
+      align-items: center;
+    }
+    .avatar-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3a0ca3, #0d9488);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .avatar-img { object-fit: cover; }
+    .role { color: var(--color-primary); font-weight: 600; }
+    .bio { color: #555; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      display: inline-block;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #f0efff;
+      color: var(--color-primary);
+      font-size: .82rem;
+      font-weight: 600;
+    }
+    .grid { display: grid; gap: 22px; }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .value-card { margin-top: 32px; }
+    .icon-badge { font-size: 1.8rem; margin-bottom: 5px; }
+    .muted { color: var(--color-muted); }
+    .socials { display: flex; gap: 10px; }
+    .socials a {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--color-dark); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 9px;
+      border: 1px solid var(--color-dark);
+    }
+    .btn-outline-dark:hover { background: var(--color-dark); color: white; }
+
+    footer {
+      background: var(--color-dark);
+      color: white;
+      padding: 40px 5%;
+    }
+    .footer-grid {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+    .footer-brand { display: flex; align-items: center; gap: 10px; }
+    footer .school-name, footer .footer-desc { color: #b8b8c2; }
+    footer h4 { margin-top: 0; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin: 7px 0; color: #d8d8df; }
+
+    @media (max-width: 700px) {
+      .main-nav { display: none; }
+      .nav-toggle { display: block; }
+      .grid-2, .footer-grid { grid-template-columns: 1fr; }
+      .faculty-spotlight { grid-template-columns: 1fr !important; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../../index.html" class="brand">
+    <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Department logo">
+      <path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+      <path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+      <path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+      <path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+      <circle cx="50" cy="50" r="27" fill="#14141a"/>
+      <text x="50" y="57" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#ffffff">CS</text>
+    </svg>
+    <span class="brand-text">
+      <span class="dept-name">Cyber Security</span>
+      <span class="school-name">Galgotias University</span>
+    </span>
+  </a>
+
+  <nav class="main-nav" aria-label="Primary">
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../faculty.html">Faculty</a></li>
+      <li><a href="../../students.html">Students</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <div class="breadcrumb">
+    <a href="../../index.html">Home</a>
+    <span>/</span>
+    <a href="../../students.html">Students</a>
+    <span>/</span>
+    Prince Tanwar
+  </div>
+
+  <h1>Prince Tanwar</h1>
+  <p class="lead">Cyber Security, Batch 2026 – 2030, First Year</p>
+
+  <div class="card detail-block">
+    <div class="faculty-spotlight" style="grid-template-columns:170px 1fr;">
+      <span style="display:contents;">
+        <img src="../photos/prince-tanwar.jpg" alt="Prince Tanwar" class="avatar-circle avatar-img"
+             style="width:150px;height:150px;"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="avatar-circle" style="width:150px;height:150px;font-size:2.2rem;display:none;">PT</div>
+      </span>
+
+      <div>
+        <h3 style="font-size:1.4rem;">Prince Tanwar</h3>
+        <div class="role">Cyber Security — First Year</div>
+        <p class="bio">
+          I am Prince Tanwar, a first-year Cyber Security student at Galgotias University,
+          Greater Noida. I am interested in cybersecurity and technology and look forward
+          to developing practical technical skills throughout my academic journey.
+        </p>
+
+        <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--color-muted);margin-bottom:8px;">
+          Technical Interests
+        </p>
+        <div class="tag-row">
+          <span class="tag">Cyber Security</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Programming</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card value-card">
+      <div class="icon-badge">🧩</div>
+      <h3 style="font-size:1.05rem;">Reasoning Skills</h3>
+      <p class="muted" style="font-size:0.9rem;">
+        I enjoy analytical problem-solving, logical thinking, understanding how systems work,
+        and learning how to identify and solve technical problems.
+      </p>
+    </div>
+
+    <div class="card value-card">
+      <div class="icon-badge">🎨</div>
+      <h3 style="font-size:1.05rem;">Hobbies</h3>
+      <div class="tag-row">
+        <span class="tag">Travelling Alone</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card value-card">
+    <div class="icon-badge">🔭</div>
+    <h3 style="font-size:1.05rem;">Area I'd Like to Explore</h3>
+    <p class="muted" style="font-size:0.9rem;">
+      I would like to explore Cyber Security, ethical hacking, network security,
+      digital security, vulnerability assessment, and other areas of information security.
+    </p>
+  </div>
+
+  <div class="card" style="margin-top:32px;padding:26px;">
+    <h3 style="font-size:1.05rem;margin-bottom:12px;">Contact</h3>
+
+    <div class="socials">
+      <a href="mailto:tanwpinchu1328@gmail.com" aria-label="Email">✉</a>
+      <a href="https://www.linkedin.com/in/prince-tanwar-5778b2431/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+      <a href="https://github.com/tanwpinchu1328-stack" aria-label="GitHub" target="_blank" rel="noopener">gh</a>
+    </div>
+
+    <p style="margin-top:15px;font-size:0.9rem;">
+      <strong>Personal Email:</strong><br>
+      tanwpinchu1328@gmail.com
+    </p>
+
+    <p style="font-size:0.9rem;">
+      <strong>University Email:</strong><br>
+      prince.26ssse3010015@galgotiasuniversity.ac.in
+    </p>
+  </div>
+
+  <div class="card" style="margin-top:32px;padding:26px;">
+    <h3 style="font-size:1.05rem;margin-bottom:12px;">Education</h3>
+    <p class="muted" style="font-size:0.9rem;">
+      <strong>Galgotias University</strong><br>
+      Greater Noida, Uttar Pradesh — 203201
+    </p>
+    <p class="muted" style="font-size:0.9rem;">
+      Programme: Cyber Security<br>
+      Batch: 2026 – 2030<br>
+      Current Year: First Year
+    </p>
+  </div>
+
+  <p style="margin-top:32px;">
+    <a href="../../students.html" class="btn btn-outline-dark">← Back to Student Directory</a>
+  </p>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+          <path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+          <path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+          <path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+          <circle cx="50" cy="50" r="27" fill="#14141a"/>
+          <text x="50" y="57" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#ffffff">CS</text>
+        </svg>
+        <span>
+          <span class="dept-name">Cyber Security</span>
+          <span class="school-name">Galgotias University</span>
+        </span>
+      </div>
+      <p class="footer-desc">
+        Student profile of Prince Tanwar, a Cyber Security student at Galgotias University, Greater Noida.
+      </p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="../../about.html">About Department</a></li>
+        <li><a href="../../faculty.html">Faculty</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Students</h4>
+      <ul>
+        <li><a href="../../students.html">Student Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

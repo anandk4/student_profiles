@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swayam Rawat | Department of Artificial Intelligence</title>
+<meta name="description" content="Student profile of Swayam Rawat — Department of Artificial Intelligence, Department of Skill Sciences and Entrepreneurship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  #profile-page .detail-block{
+    border:1px solid #ece9f4;
+    box-shadow:none;
+    overflow:hidden;
+  }
+  #profile-page .faculty-spotlight{align-items:start;}
+  #profile-page .avatar-ring{
+    width:150px;height:150px;border-radius:50%;
+    padding:5px;
+    background:conic-gradient(from 220deg,#e63946,#fb8500,#0d9488,#3a0ca3,#e63946);
+    display:inline-block;
+  }
+  #profile-page .avatar-ring .avatar-circle{
+    width:100% !important;height:100% !important;
+    border:4px solid #fff;
+  }
+  #profile-page .name-row{
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  }
+  #profile-page .name-row .role{
+    font-size:0.82rem;
+    color:#3a0ca3;
+    font-weight:600;
+  }
+  #profile-page .bio{
+    border-left:3px solid #3a0ca3;
+    padding:2px 0 2px 16px;
+    line-height:1.7;
+    color:#3a3a45;
+  }
+  #profile-page .skills-label{
+    font-size:0.72rem;font-weight:600;letter-spacing:0.02em;
+    color:var(--color-muted);margin:16px 0 8px;
+  }
+  #profile-page .tag-row .tag{
+    font-family:"SFMono-Regular",Consolas,"Courier New",monospace;
+    font-size:0.78rem;
+    background:#f6f5fb;
+    border:1px solid #ddd9ec;
+    color:#3a0ca3;
+    border-radius:5px;
+  }
+  #profile-page .value-card{
+    border-radius:8px;
+    border-top:3px solid transparent;
+  }
+  #profile-page .accent-a{border-top-color:#3a0ca3;}
+  #profile-page .accent-b{border-top-color:#fb8500;}
+  #profile-page .accent-c{border-top-color:#0d9488;}
+  #profile-page .icon-badge{background:transparent;font-size:1.5rem;padding-left:0;}
+  #profile-page .hobby-list{
+    list-style:none;margin:4px 0 0;padding:0;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  #profile-page .hobby-list li{
+    display:flex;align-items:center;gap:10px;
+    font-size:0.9rem;color:#3a3a45;
+  }
+  #profile-page .hobby-list li span{font-size:1.05rem;}
+  #profile-page .socials a{
+    transition:background .15s ease,color .15s ease;
+  }
+  #profile-page .socials a:hover{
+    background:#3a0ca3;color:#fff;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="../../index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Department logo">
+        <path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+        <path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+        <path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+        <path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+        <circle cx="50" cy="50" r="27" fill="#14141a"/>
+        <text x="50" y="57" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#ffffff">AI</text>
+      </svg>
+      <span class="brand-text">
+        <span class="dept-name">Dept. of Artificial Intelligence</span>
+        <span class="school-name">Department of Skill Sciences and Entrepreneurship</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about.html">About</a></li>
+        <li><a href="../../faculty.html">Faculty</a></li>
+        <li><a href="../../students.html">Students</a></li>
+        <li><a href="../../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero-page">
+  <div class="container hero-inner">
+    <div class="breadcrumb"><a href="../../index.html">Home</a><span>/</span><a href="../../students.html">Students</a><span>/</span>Swayam Rawat</div>
+    <h1>Swayam Rawat</h1>
+    <p class="lead">B.Tech in AI, Batch 2026 – 2030, First Year</p>
+  </div>
+</section>
+
+<section id="profile-page">
+  <div class="container">
+
+    <div class="card detail-block reveal">
+      <div class="faculty-spotlight" style="grid-template-columns:170px 1fr;">
+        <span style="display:contents;">
+          <span class="avatar-ring">
+            <img src="../photos/swayam-rawat.jpg" alt="Swayam Rawat" class="avatar-circle avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="avatar-circle" style="font-size:2.2rem;display:none;">SR</div>
+          </span>
+        </span>
+        <div>
+          <div class="name-row">
+            <h3 style="font-size:1.4rem;margin:0;">Swayam Rawat</h3>
+          </div>
+          <div class="role">B.Tech in Artificial Intelligence — First Year</div>
+          <p class="bio" style="max-width:100%;margin-top:12px;">I'm a first-year AI engineering student who got drawn to the field through a fascination with how machines can learn to make decisions on their own. What excites me most right now is generative AI — seeing how models can create rather than just classify or predict. I'm just starting out with Python and DSA, and I'm looking forward to building a strong foundation as I dive deeper into the world of AI.</p>
+          <p class="skills-label">Programming Skills</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-2 reveal" style="margin-top:32px;">
+      <div class="card value-card accent-a">
+        <div class="icon-badge">🧩</div>
+        <h3 style="font-size:1.05rem;">Reasoning Skills</h3>
+        <p class="muted" style="font-size:0.9rem;">I enjoy breaking problems down step by step, whether that's figuring out strategy in an online game or working through a tricky bit of logic in code — I like trying different approaches until something clicks.</p>
+      </div>
+      <div class="card value-card accent-b">
+        <div class="icon-badge">🎨</div>
+        <h3 style="font-size:1.05rem;">Hobbies</h3>
+        <ul class="hobby-list">
+          <li><span>🎮</span>Online Gaming</li>
+          <li><span>🎵</span>Listening to Music</li>
+          <li><span>🏸</span>Badminton</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card value-card accent-c reveal" style="margin-top:32px;">
+      <div class="icon-badge">🔭</div>
+      <h3 style="font-size:1.05rem;">Area I'd Like to Explore</h3>
+      <p class="muted" style="font-size:0.9rem;">Generative AI and NLP — I'm especially curious about how models learn to create text, images, and other content, and how they understand and generate human language.</p>
+    </div>
+
+    <div class="card reveal" style="margin-top:32px;padding:26px;">
+      <h3 style="font-size:1.05rem;margin-bottom:12px;">Contact</h3>
+      <div class="socials" style="justify-content:flex-start;">
+        <a href="mailto:swayamxd1769@gmail.com" aria-label="Email">✉</a>
+        <a href="https://www.linkedin.com/in/swayam-rawat-a74519413" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://github.com/swayamrawat" aria-label="GitHub" target="_blank" rel="noopener">gh</a>
+      </div>
+    </div>
+
+    <p style="margin-top:32px;"><a href="../../students.html" class="btn btn-outline-dark">← Back to Student Directory</a></p>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+            <path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+            <path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+            <path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+            <circle cx="50" cy="50" r="27" fill="#14141a"/>
+            <text x="50" y="57" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#ffffff">AI</text>
+          </svg>
+          <span>
+            <span class="dept-name" style="display:block;">Dept. of Artificial Intelligence</span>
+            <span class="school-name">Department of Skill Sciences and Entrepreneurship</span>
+          </span>
+        </div>
+        <p class="footer-desc">Preparing students for careers in AI, machine learning and data engineering through applied, skills-first education.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../../about.html">About Department</a></li>
+          <li><a href="../../faculty.html">Faculty</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Students</h4>
+        <ul>
+          <li><a href="../../students.html">Student Directory</a></li>
+          <li><a href="../../contact.html">Admissions Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Department of Artificial Intelligence,<br>Department of Skill Sciences and Entrepreneurship,<br>Galgotias University, Greater Noida, 201310</li>
+          <li>ai.department@example.edu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2026</span> Department of Artificial Intelligence — Department of Skill Sciences and Entrepreneurship. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="../../js/script.js"></script>
+</body>
+</html>
