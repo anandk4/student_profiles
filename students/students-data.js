@@ -1,4 +1,4 @@
-/* ==========================================================================
+   /* ==========================================================================
    Department of Artificial Intelligence — Student Directory data
    ==========================================================================
    This is the single list that drives BOTH the "Featured Students" section
